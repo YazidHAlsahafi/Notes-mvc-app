@@ -1,5 +1,6 @@
 # Use a Maven image with OpenJDK 17 as the base image
-FROM maven:3.8.8-openjdk-17
+FROM maven:3.8.3-openjdk-17
+
 
 # Set the working directory in the container
 WORKDIR /app
