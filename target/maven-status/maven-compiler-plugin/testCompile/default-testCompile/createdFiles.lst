@@ -1,1 +1,4 @@
-com\example\demo\Demo1ApplicationTests.class
+com\example\demo\SystemTest.class
+com\example\demo\NoteControllerTest.class
+com\example\demo\NoteServiceTest.class
+com\example\demo\NoteTest.class
