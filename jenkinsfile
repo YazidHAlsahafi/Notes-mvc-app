@@ -5,10 +5,8 @@ pipeline {
         stage('Build') {
             steps {
                 script {
-                    // Ensure mvnw is executable
-                    sh 'chmod +x mvnw'
-                    // Maven build command
-                    sh './mvnw clean install'
+                    // Maven build command using system-installed Maven
+                    sh 'mvn clean install'
                 }
             }
         }
@@ -17,7 +15,7 @@ pipeline {
             steps {
                 script {
                     // Run tests
-                    sh './mvnw test'
+                    sh 'mvn test'
                 }
             }
         }
