@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: com.example.demo.SystemTest
 -------------------------------------------------------------------------------
-Tests run: 9, Failures: 0, Errors: 9, Skipped: 0, Time elapsed: 0.077 s <<< FAILURE! -- in com.example.demo.SystemTest
-com.example.demo.SystemTest.testEditNoteWithNullTitle -- Time elapsed: 0.055 s <<< ERROR!
+Tests run: 9, Failures: 0, Errors: 9, Skipped: 0, Time elapsed: 0.070 s <<< FAILURE! -- in com.example.demo.SystemTest
+com.example.demo.SystemTest.testEditNoteWithNullTitle -- Time elapsed: 0.054 s <<< ERROR!
 org.openqa.selenium.remote.NoSuchDriverException: 
 chromedriver at location C:\chromedriver-win64\chromedriver.exe, does not exist
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location/
@@ -20,7 +20,7 @@ Driver info: driver.version: ChromeDriver
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
 
-com.example.demo.SystemTest.testEditNoteWithNullContent -- Time elapsed: 0.002 s <<< ERROR!
+com.example.demo.SystemTest.testEditNoteWithNullContent -- Time elapsed: 0.001 s <<< ERROR!
 org.openqa.selenium.remote.NoSuchDriverException: 
 chromedriver at location C:\chromedriver-win64\chromedriver.exe, does not exist
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location/
@@ -56,7 +56,7 @@ Driver info: driver.version: ChromeDriver
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
 
-com.example.demo.SystemTest.testCreateNullTitleNote -- Time elapsed: 0.001 s <<< ERROR!
+com.example.demo.SystemTest.testCreateNullTitleNote -- Time elapsed: 0.002 s <<< ERROR!
 org.openqa.selenium.remote.NoSuchDriverException: 
 chromedriver at location C:\chromedriver-win64\chromedriver.exe, does not exist
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location/
@@ -74,7 +74,7 @@ Driver info: driver.version: ChromeDriver
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
 
-com.example.demo.SystemTest.testCreateNullContentNote -- Time elapsed: 0.002 s <<< ERROR!
+com.example.demo.SystemTest.testCreateNullContentNote -- Time elapsed: 0.001 s <<< ERROR!
 org.openqa.selenium.remote.NoSuchDriverException: 
 chromedriver at location C:\chromedriver-win64\chromedriver.exe, does not exist
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location/
@@ -92,7 +92,7 @@ Driver info: driver.version: ChromeDriver
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
 
-com.example.demo.SystemTest.testDeleteNote -- Time elapsed: 0.001 s <<< ERROR!
+com.example.demo.SystemTest.testDeleteNote -- Time elapsed: 0 s <<< ERROR!
 org.openqa.selenium.remote.NoSuchDriverException: 
 chromedriver at location C:\chromedriver-win64\chromedriver.exe, does not exist
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location/
@@ -110,7 +110,7 @@ Driver info: driver.version: ChromeDriver
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
 
-com.example.demo.SystemTest.createNote -- Time elapsed: 0 s <<< ERROR!
+com.example.demo.SystemTest.createNote -- Time elapsed: 0.001 s <<< ERROR!
 org.openqa.selenium.remote.NoSuchDriverException: 
 chromedriver at location C:\chromedriver-win64\chromedriver.exe, does not exist
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location/
@@ -128,7 +128,7 @@ Driver info: driver.version: ChromeDriver
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
 
-com.example.demo.SystemTest.testEditNoteWithNullAll -- Time elapsed: 0.002 s <<< ERROR!
+com.example.demo.SystemTest.testEditNoteWithNullAll -- Time elapsed: 0.001 s <<< ERROR!
 org.openqa.selenium.remote.NoSuchDriverException: 
 chromedriver at location C:\chromedriver-win64\chromedriver.exe, does not exist
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location/
@@ -146,7 +146,7 @@ Driver info: driver.version: ChromeDriver
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
 
-com.example.demo.SystemTest.editNote -- Time elapsed: 0.001 s <<< ERROR!
+com.example.demo.SystemTest.editNote -- Time elapsed: 0.002 s <<< ERROR!
 org.openqa.selenium.remote.NoSuchDriverException: 
 chromedriver at location C:\chromedriver-win64\chromedriver.exe, does not exist
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location/
