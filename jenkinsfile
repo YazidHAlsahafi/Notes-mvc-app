@@ -1,10 +1,12 @@
-pipeline {
+pipeline { 
     agent any
 
     stages {
         stage('Build') {
             steps {
                 script {
+                    // Ensure mvnw is executable
+                    sh 'chmod +x mvnw'
                     // Maven build command
                     sh './mvnw clean install'
                 }
@@ -28,7 +30,7 @@ pipeline {
             }
             steps {
                 script {
-                    // Deployment to staging (e.g., Docker or Tomcat)
+                    // Deployment to staging using Docker Compose
                     sh 'docker-compose -f docker-compose.staging.yml up -d'
                 }
             }
@@ -37,16 +39,26 @@ pipeline {
 
     post {
         success {
-            emailext to: 'team@example.com',
-                    subject: "SUCCESS: ${env.JOB_NAME} - ${env.BUILD_NUMBER}",
-                    body: "Build and deployment to staging were successful."
-            slackSend channel: '#deployments', message: "Deployment to staging successful: ${env.JOB_NAME} #${env.BUILD_NUMBER}"
+            emailext(
+                to: 'team@example.com',
+                subject: "SUCCESS: ${env.JOB_NAME} - ${env.BUILD_NUMBER}",
+                body: "Build and deployment to staging were successful."
+            )
+            slackSend(
+                channel: '#deployments',
+                message: "Deployment to staging successful: ${env.JOB_NAME} #${env.BUILD_NUMBER}"
+            )
         }
         failure {
-            emailext to: 'team@example.com',
-                    subject: "FAILURE: ${env.JOB_NAME} - ${env.BUILD_NUMBER}",
-                    body: "Build or deployment failed."
-            slackSend channel: '#deployments', message: "Deployment failed: ${env.JOB_NAME} #${env.BUILD_NUMBER}"
+            emailext(
+                to: 'team@example.com',
+                subject: "FAILURE: ${env.JOB_NAME} - ${env.BUILD_NUMBER}",
+                body: "Build or deployment failed."
+            )
+            slackSend(
+                channel: '#deployments',
+                message: "Deployment failed: ${env.JOB_NAME} #${env.BUILD_NUMBER}"
+            )
         }
     }
 }
